@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>이름</th>
+                <th>도시</th>
+                <th>주소</th>
+                <th>우편번호</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="rt : ${members}">
+                    <td th:text="${rt.getName()}"> </td>
+                    <td th:text="${rt.getName()}"> </td>
+                    <td th:text="${rt.getName()}"> </td>
+                    <td th:text="${rt.getName()}"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
